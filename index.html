@@ -36,6 +36,8 @@ button {
 #no {
   background: #f1f1f1;
   position: absolute;
+  left: 55%;
+  top: 60%;
 }
 
 #counter {
@@ -52,10 +54,12 @@ button {
   animation: floatUp 5s linear infinite;
 }
 
-@keyframes floatUp {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-100vh); opacity: 0; }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
+
 </style>
 </head>
 
@@ -63,6 +67,16 @@ button {
 
 <h1>Hey <span id="herName">Muskuuuuuu</span> 💕<br>
 Will you be my Valentine? 😘</h1>
+
+<img src="unnamed.jpg" alt="Us" 
+style="
+width:220px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+animation: float 3s ease-in-out infinite;
+">
+
 
 <button id="yes">YES 😍</button>
 <button id="no">NO 🙄</button>
@@ -98,7 +112,7 @@ document.getElementById("yes").onclick = function() {
   Our Date Plan:<br><br>
   🍝 Ice Cream at your favourite place<br>
   
-  <a href="https://https://share.google/9iGG1f7eQwUqZNjql" 
+  <a href="https://share.google/9iGG1f7eQwUqZNjql" 
 style="color:white;" target="_blank">
 Click here for surprise location 😉
 </a>
